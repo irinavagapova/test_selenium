@@ -1,0 +1,426 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>15</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">login</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">new_kupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">search</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">delete</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">login.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=#page .auth input[name='email']</td>
+	<td>demo_err@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=#page .auth input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#page .auth button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.alert-danger&gt;h4.alert-heading</td>
+	<td>Some errors in the form</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=#page .auth input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=#page .auth input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#page .auth button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTitle</td>
+	<td>Welcome - open-eshop</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">new_kupon.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">new_kupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=.panel-title a[href='#collapseOne']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a[title="Coupons"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div#content a.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div#crud h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.form-actions button</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.alert.alert-danger</td>
+	<td>?? ErrorCoupon not created, errors: valid_date must not be empty - name must not be empty -</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div#content a.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div#crud h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=name</td>
+	<td>kuponchik</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=discount_amount</td>
+	<td>1000</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=valid_date</td>
+	<td>2016-08-22</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>Math.floor(1+Math.random()*9)</td>
+	<td>count</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=number_coupons</td>
+	<td>${count}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.form-actions button</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h4.alert-heading</td>
+	<td>Success</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTable</td>
+	<td>css=div#content table.1.0</td>
+	<td>kuponchik</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">search.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">search</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=input.form-control</td>
+	<td>kuponchik</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTable</td>
+	<td>css=div.table-responsive table.1.0</td>
+	<td>kuponchik</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">delete.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">delete</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.btn.btn-danger.index-delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible h2</td>
+	<td>Are you sure you want to delete?</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.confirm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>refresh</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForNotTable</td>
+	<td>css=div#content table.1.0</td>
+	<td>kuponchik</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">logout.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">logout</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon?name=kuponchik</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.btn.dropdown-toggle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTitle</td>
+	<td>Login - open-eshop</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/login.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/auth/login |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | css=#page .auth input[name=&apos;email&apos;] | demo_err@open-eshop.com |
+info: Executing: |type | css=#page .auth input[name=&apos;password&apos;] | demo |
+info: Executing: |click | css=#page .auth button.btn.btn-primary |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForText | css=div.alert-danger&gt;h4.alert-heading | Some errors in the form |
+info: Executing: |type | css=#page .auth input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | css=#page .auth input[name=&apos;password&apos;] | demo |
+info: Executing: |clickAndWait | css=#page .auth button.btn.btn-primary |  |
+info: Executing: |waitForTitle | Welcome - open-eshop |  |
+info: Starting test /selenium-server/tests/new_kupon.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon |  |
+info: Executing: |click | css=.panel-title a[href=&apos;#collapseOne&apos;] |  |
+info: Executing: |click | css=a[title=&quot;Coupons&quot;] |  |
+info: Executing: |click | css=div#content a.btn.btn-primary |  |
+info: Executing: |waitForText | css=div#crud h1 | Create coupon |
+info: Executing: |click | css=div.form-actions button |  |
+info: Executing: |waitForText | css=div.alert.alert-danger | ?? ErrorCoupon not created, errors: valid_date must not be empty - name must not be empty - |
+info: Executing: |click | css=div#content a.btn.btn-primary |  |
+info: Executing: |waitForText | css=div#crud h1 | Create coupon |
+info: Executing: |click | id=name |  |
+info: Executing: |type | id=name | kuponchik |
+info: Executing: |type | id=discount_amount | 1000 |
+info: Executing: |type | name=valid_date | 2016-08-22 |
+info: Executing: |storeEval | Math.floor(1+Math.random()*9) | count |
+info: script is: Math.floor(1+Math.random()*9)
+info: Executing: |type | id=number_coupons | ${count} |
+info: Executing: |click | css=div.form-actions button |  |
+info: Executing: |waitForText | css=h4.alert-heading | Success |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertTable | css=div#content table.1.0 | kuponchik |
+info: Starting test /selenium-server/tests/search.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon |  |
+info: Executing: |type | css=input.form-control | kuponchik |
+info: Executing: |click | css=button.btn |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForTable | css=div.table-responsive table.1.0 | kuponchik |
+info: Starting test /selenium-server/tests/delete.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon |  |
+info: Executing: |pause | 500 |  |
+info: Executing: |click | css=a.btn.btn-danger.index-delete |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForText | css=div.sweet-alert.showSweetAlert.visible h2 | Are you sure you want to delete? |
+info: Executing: |click | css=button.confirm |  |
+info: Executing: |refresh | /open-eshop-2.0.1/oc-panel/Coupon |  |
+info: Executing: |waitForNotTable | css=div#content table.1.0 | kuponchik |
+info: Starting test /selenium-server/tests/logout.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon?name=kuponchik |  |
+info: Executing: |click | css=a.btn.dropdown-toggle |  |
+info: Executing: |click | link=Logout |  |
+info: Executing: |waitForTitle | Login - open-eshop |  |
+</pre></body></html>

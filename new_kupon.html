@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/" />
+<title>new_kupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">new_kupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.panel-title a[href='#collapseOne']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a[title=&quot;Coupons&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#content a.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div#crud h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.form-actions button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.alert.alert-danger</td>
+	<td>× ErrorCoupon not created, errors: valid_date must not be empty - name must not be empty -</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#content a.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div#crud h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>kuponchik</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=discount_amount</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=valid_date</td>
+	<td>2016-08-22</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.floor(1+Math.random()*9)</td>
+	<td>count</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=number_coupons</td>
+	<td>${count}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.form-actions button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h4.alert-heading</td>
+	<td>Success</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=div#content table.1.0</td>
+	<td>kuponchik</td>
+</tr>
+</tbody></table>
+</body>
+</html>
